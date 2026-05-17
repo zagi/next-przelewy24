@@ -143,7 +143,16 @@ import { createP24Server } from 'next-przelewy24';
 
 const p24 = createP24Server({ /* … */ });
 await p24.verifyTransaction({ /* … */ });
-await p24.refundTransaction({ /* … */ });
+await p24.refund({
+  requestId: crypto.randomUUID(),
+  refundsUuid: crypto.randomUUID(),
+  refunds: [{
+    orderId: 12345,
+    sessionId: 'order-1',
+    amount: 1099,
+    description: 'Customer requested refund',
+  }],
+});
 ```
 
 ## Contributing
