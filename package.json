@@ -84,5 +84,10 @@
     "tsdown": "^0.22.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.6"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "przelewy24-ts-sdk"
+    ]
   }
 }
