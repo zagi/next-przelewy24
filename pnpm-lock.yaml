@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       przelewy24-ts-sdk:
-        specifier: file:../przelewy24-ts-sdk
-        version: file:../przelewy24-ts-sdk
+        specifier: github:zagi/przelewy24-ts-sdk
+        version: https://codeload.github.com/zagi/przelewy24-ts-sdk/tar.gz/01ba8ab211f8dc76c9bf9027f1b0e62e9488eca2
       server-only:
         specifier: ^0.0.1
         version: 0.0.1
@@ -1017,8 +1017,9 @@ packages:
     resolution: {integrity: sha512-SoSL4+OSEtR99LHFZQiJLkT59C5B1amGO1NzTwj7TT1qCUgUO6hxOvzkOYxD+vMrXBM3XJIKzokoERdqQq/Zmg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  przelewy24-ts-sdk@file:../przelewy24-ts-sdk:
-    resolution: {directory: ../przelewy24-ts-sdk, type: directory}
+  przelewy24-ts-sdk@https://codeload.github.com/zagi/przelewy24-ts-sdk/tar.gz/01ba8ab211f8dc76c9bf9027f1b0e62e9488eca2:
+    resolution: {tarball: https://codeload.github.com/zagi/przelewy24-ts-sdk/tar.gz/01ba8ab211f8dc76c9bf9027f1b0e62e9488eca2}
+    version: 0.0.0
     engines: {node: '>=20.11'}
 
   quansync@1.0.0:
@@ -2181,7 +2182,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  przelewy24-ts-sdk@file:../przelewy24-ts-sdk: {}
+  przelewy24-ts-sdk@https://codeload.github.com/zagi/przelewy24-ts-sdk/tar.gz/01ba8ab211f8dc76c9bf9027f1b0e62e9488eca2: {}
 
   quansync@1.0.0: {}
 

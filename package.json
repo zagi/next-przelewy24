@@ -53,8 +53,8 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch",
+    "build": "tsdown --config-loader native",
+    "dev": "tsdown --config-loader native --watch",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -67,7 +67,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "przelewy24-ts-sdk": "file:../przelewy24-ts-sdk",
+    "przelewy24-ts-sdk": "github:zagi/przelewy24-ts-sdk",
     "server-only": "^0.0.1"
   },
   "peerDependencies": {
