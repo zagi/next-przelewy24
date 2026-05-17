@@ -67,7 +67,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "przelewy24-ts-sdk": "file:../przelewy-ts-sdk",
+    "przelewy24-ts-sdk": "file:../przelewy24-ts-sdk",
     "server-only": "^0.0.1"
   },
   "peerDependencies": {
