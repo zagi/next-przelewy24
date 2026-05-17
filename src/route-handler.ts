@@ -1,6 +1,6 @@
 import 'server-only';
-import { isP24Error, type WebhookPayload } from 'przelewy24-ts-sdk';
-import { verifyWebhook } from 'przelewy24-ts-sdk/webhooks';
+import { isP24Error, type WebhookPayload } from '@zagi_14/przelewy24-ts-sdk';
+import { verifyWebhook } from '@zagi_14/przelewy24-ts-sdk/webhooks';
 
 /** Options for {@link createWebhookHandler}. */
 export interface CreateWebhookHandlerOptions {

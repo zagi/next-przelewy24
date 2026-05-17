@@ -1,4 +1,4 @@
-import { signFields } from 'przelewy24-ts-sdk';
+import { signFields } from '@zagi_14/przelewy24-ts-sdk';
 import { describe, expect, it } from 'vitest';
 import { createWebhookHandler } from '../src/route-handler';
 

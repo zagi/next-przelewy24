@@ -1,6 +1,6 @@
 {
-  "name": "next-przelewy24",
-  "version": "0.0.0",
+  "name": "@zagi_14/next-przelewy24",
+  "version": "0.1.0",
   "description": "Next.js 15+ App Router helpers for Przelewy24 (P24) — webhook Route Handler factory, Server Action checkout helper, server-only enforced.",
   "keywords": [
     "next",
@@ -67,7 +67,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "przelewy24-ts-sdk": "github:zagi/przelewy24-ts-sdk",
+    "@zagi_14/przelewy24-ts-sdk": "^0.1.0",
     "server-only": "^0.0.1"
   },
   "peerDependencies": {
@@ -84,10 +84,5 @@
     "tsdown": "^0.22.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.6"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "przelewy24-ts-sdk"
-    ]
   }
 }

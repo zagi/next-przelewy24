@@ -3,7 +3,7 @@ import type {
   P24Client,
   RegisterTransactionInput,
   RegisterTransactionResult,
-} from 'przelewy24-ts-sdk';
+} from '@zagi_14/przelewy24-ts-sdk';
 
 export interface CreateCheckoutActionOptions {
   /** A P24Client instance, or a factory that produces one lazily on first invocation. */
