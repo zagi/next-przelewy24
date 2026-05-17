@@ -1,0 +1,88 @@
+{
+  "name": "next-przelewy24",
+  "version": "0.0.0",
+  "description": "Next.js 15+ App Router helpers for Przelewy24 (P24) — webhook Route Handler factory, Server Action checkout helper, server-only enforced.",
+  "keywords": [
+    "next",
+    "nextjs",
+    "app-router",
+    "przelewy24",
+    "p24",
+    "payments"
+  ],
+  "license": "MIT",
+  "author": "Michał Zagalski",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zagi/next-przelewy24.git"
+  },
+  "homepage": "https://github.com/zagi/next-przelewy24#readme",
+  "bugs": {
+    "url": "https://github.com/zagi/next-przelewy24/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./webhook": {
+      "types": "./dist/route-handler.d.ts",
+      "import": "./dist/route-handler.js",
+      "require": "./dist/route-handler.cjs"
+    },
+    "./actions": {
+      "types": "./dist/actions.d.ts",
+      "import": "./dist/actions.js",
+      "require": "./dist/actions.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "check": "biome check .",
+    "release": "bumpp && pnpm publish",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "przelewy24-ts-sdk": "file:../przelewy-ts-sdk",
+    "server-only": "^0.0.1"
+  },
+  "peerDependencies": {
+    "next": "^15.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.15",
+    "@types/node": "^25.8.0",
+    "@vitest/coverage-v8": "^4.1.6",
+    "bumpp": "^11.1.0",
+    "changelogen": "^0.6.2",
+    "msw": "^2.14.6",
+    "next": "^15.0.0",
+    "tsdown": "^0.22.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}
